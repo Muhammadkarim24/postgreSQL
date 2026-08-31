@@ -4,19 +4,13 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import Message
 import asyncio
 from aiogram.filters import CommandStart, Command
-from api_token import TOKEN
+from api_token import TOKEN, ADMIN_IDS, DB_CONFIG
 from aiogram.client.session.aiohttp import AiohttpSession
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from aiogram.client.session.aiohttp import AiohttpSession
 
 # conn = psycopg2.connect(
-DB_CONFIG = {
-    "user": "postgres",
-    "password": "314159265", 
-    "database": "testdb",
-    "host": "127.0.0.1",
-    "port": "5432" 
-}
+
 
 PROXY_URL = proxy="socks5://127.0.0.1:10808"
 
